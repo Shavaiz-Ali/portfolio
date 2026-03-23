@@ -36,7 +36,7 @@ const Socials = ({ className }: { className?: string }) => {
                 {
                     socialLinks.map((s) => (
                         <a key={s.id} href={s.href} target="_blank">
-                            <span><Image src={s.path} width={s.height} height={s.width} alt={s.alt} /></span>
+                            <span><Image src={s.path} loading='eager' priority width={s.height} height={s.width} alt={s.alt} /></span>
                         </a>
                     ))
                 }

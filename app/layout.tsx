@@ -22,7 +22,7 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", firaCode.variable)}
     >
       <body className="min-h-full flex flex-col relative">
-        <Socials />
+        <Socials className="hidden xl:flex" />
         <Header />
         {children}
       </body>
