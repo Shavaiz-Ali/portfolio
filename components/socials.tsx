@@ -30,7 +30,7 @@ const socialLinks = [
 
 const Socials = ({ className }: { className?: string }) => {
     return (
-        <div className={cn("absolute left-5 top-0 flex flex-col items-center", className)}>
+        <div className={cn("fixed left-5 top-0 flex flex-col items-center", className)}>
             <Image src={"/images/line_downwards.png"} width={1} height={100} alt='line_downwards' />
             <div className="flex  flex-col items-center gap-2">
                 {

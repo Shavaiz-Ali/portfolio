@@ -25,7 +25,7 @@ const Header = () => {
                         <Link
                             key={item.id}
                             href={item.href}
-                            className={cn("text-base font-medium text-foreground flex items-center", isActiveLink === item.href && "text-white")}
+                            className={cn("text-base font-medium text-foreground flex items-center hover:text-white transition-colors duration-300 ease-in-out", isActiveLink === item.href && "text-white")}
                             onClick={() => setIsActiveLink(item.href)}
                         >
                             <span className='text-primary'>{item.icon}</span>
