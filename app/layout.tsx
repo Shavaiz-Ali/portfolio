@@ -11,6 +11,11 @@ const firaCode = Fira_Code({
   subsets: ["latin"],
 });
 
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "Portfolio",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
